@@ -1,0 +1,211 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: lightgray;
+}
+
+h1,
+h2 {
+  text-align: center;
+  background-color: #008c8c;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+nav ul {
+  display: flex;
+  padding: 20px 0px;
+  border-bottom: 2px solid white;
+  justify-content: center;
+}
+
+.nav-item {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #008c8c;
+  font-weight: bolder;
+}
+
+.nav-item:hover {
+  background-color: #008c8c;
+  color: white;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.tab {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #008c8c;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.tabs .tab.active {
+  background-color: #3498db;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 100vw;
+  justify-content: center;
+}
+
+.flight-booking-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.columns-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+label {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+#departure,
+#arrival {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.flight-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+.flight-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  background-color: #008c8c;
+  border-radius: 10px;
+}
+
+.flight-card li {
+  list-style-type: none;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.pagination button:hover {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  cursor: pointer;
+  padding: 5px;
+}
+
+button {
+  background-color: #008c8c;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: large;
+  padding: 10px;
+}
+
+.booking-button {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.booking-button button {
+  padding: 30px;
+  cursor: pointer;
+}
+
+.booking-message {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  font-size: 26px;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .flight-booking-container {
+    max-width: 350px;
+  }
+
+  .section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .section input {
+    margin: 10px 0;
+    margin-right: 5px;
+  }
+
+  .flight-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .flight-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    background-color: #008c8c;
+    border-radius: 10px;
+  }
+}
